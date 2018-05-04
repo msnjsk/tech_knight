@@ -15,5 +15,8 @@ Module.register("mydiet",{
 
 	getTemplateData: function () {
 		return this.config
+	},
+	notificationReceived: function(notification, payload, sender) {
+		console.log(notification +"----"+ payload);
 	}
 });

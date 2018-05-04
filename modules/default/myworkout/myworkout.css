@@ -66,27 +66,45 @@
 .under-weight:before {
 	background-image: url("underweight.png");
     content: "";
-    width: 30px;
+    width: 60px;
     height: 60px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+    position: ABSOLUTE;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    top: 10px;
 }
 .normal-weight:before {
 	background-image: url("normal.png");
     content: "";
-    width: 30px;
+    width: 60px;
     height: 60px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+    position: ABSOLUTE;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    top: 10px;
 }
 .over-weight:before {
 	background-image: url("overweight.png");
     content: "";
-    width: 30px;
+    width: 60px;
     height: 60px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+    position: ABSOLUTE;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    top: 10px;
+}
+.under-weight,.normal-weight,.over-weight {
+	padding-top: 40px;
 }
