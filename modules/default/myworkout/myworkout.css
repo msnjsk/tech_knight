@@ -1,0 +1,92 @@
+.myworkout {
+    width: 500px;
+}
+.myworkout h2 {
+    color: #fff;
+}
+.icon-workout:after {
+    background-image: url("workout.png");
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.myworkout .title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.workout-list {
+    list-style: none;
+    margin: 0;
+    padding: 0px 0 0 0;
+}
+.workout-list li {
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.workout-list li:last-child {
+    margin-bottom:0px;
+}
+.myworkout .icon-eat:after{
+    background-image: url("eat.png");
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.myworkout .icon-snaks:after{
+    background-image: url("shake.png");
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.myworkout .icon {
+    display: inline-block;
+    float: right;
+    padding-left: 20px;
+}
+.myworkout h3 {
+    margin: 0;
+    padding: 0;
+    font-size:20px;
+    color : #fff;
+}
+.myworkout .food-items {
+    font-size: 16px;
+    color: #aaa;
+}
+.under-weight:before {
+	background-image: url("underweight.png");
+    content: "";
+    width: 30px;
+    height: 60px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.normal-weight:before {
+	background-image: url("normal.png");
+    content: "";
+    width: 30px;
+    height: 60px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.over-weight:before {
+	background-image: url("overweight.png");
+    content: "";
+    width: 30px;
+    height: 60px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
