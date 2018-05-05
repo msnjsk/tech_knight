@@ -63,7 +63,188 @@ var config = {
 {
 			module: "mydiet",
 			position: "bottom_right",
-			classes: 'default everyone'	
+			classes: 'default everyone',
+			config: {
+				"underWeight": {
+					"type": "Under Weight",
+					"foodPlan": {
+						"veg":  {
+							"breakfast" : "2 Multigrain Breads | 1 Bannana | 1 Cappuccino",
+							"morningSnacks": "1 Glass milk shake | 4 walnuts | 3 dates",
+							"lunch" : "Small bowl of rice | 2 chapattis | veg curry | Sweet curd",
+							"eveningSnacks": "Veg sandwich with cheese",
+							"dinner": "A bowl of pulses (Masoor, moong, chana) | 1 Bannana"
+						},
+						"nonVeg": {
+							"breakfast" : "2 Multigrain Breads | 1 Omelet | 1 Cappuccino",
+							"morningSnacks": "1 Glass milk shake | 4 walnuts | 3 dates",
+							"lunch" : "Small bowl of rice | 2 chapattis | Fish curry | Sweet curd",
+							"eveningSnacks": "1 Bowl of chicken soup",
+							"dinner": "2 pieces of chicken | Green salad"
+						}
+					},
+					"workOuts": [
+						{
+							"day": "Day 1",
+							"name": "Upper Body & Abs",
+							"list": [
+								"2 x of Push ups",
+								"2 x Pike Push ups or Hindu Push ups",
+								"2 x Triceps Dip",
+								"6 x Pull ups",
+								"3 x Ab Circuits"
+							]
+						},
+						{
+							"day": "Day 2",
+							"name": "Lower Body & Cardio",
+							"list": [
+								"2 x Bodyweight Squat",
+								"2 x Squat Jump",
+								"2 x Lunge",
+								"2 x Standing calf raise",
+								"3 x Burpee"
+							]
+						},
+						{
+							"day": "Day 3",
+							"name": "Upper Body",
+							"list": [
+								"2 x of Push ups",
+								"2 x Pike Push ups or Hindu Push ups",
+								"2 x Triceps Dip",
+								"6 x Pull ups",
+								"3 x Ab Circuits"
+							]
+						},
+						{
+							"day": "Day 4",
+							"name": "Lower Body",
+							"list": [
+								"2 x Bodyweight Squat",
+								"2 x Squat Jump",
+								"2 x Lunge",
+								"2 x Standing calf raise",
+								"3 x Burpee"
+							]
+						}
+					]
+				},
+				"overWeight": {
+					"type": "Over Weight",
+					"foodPlan": {
+						"veg":  {
+							"breakfast" : "3/4 cup cooked oats | 1 cup green tea",
+							"morningSnacks": "1 cup Soy milk",
+							"lunch" : "2 chapattis | Veg curry | Buttermilk",
+							"eveningSnacks": "1/2 Cup high-fiber Cereal",
+							"dinner": "2 Whole-wheat bread | 1 tsp Tabasco and lemon juice"
+						},
+						"nonVeg": {
+							"breakfast" : "2 moong daal chillas | 1 cup green tea | 2 Egg Whites",
+							"morningSnacks": "1 cup Soy milk",
+							"lunch" : "Tuna fish roll | Minestrone soup",
+							"eveningSnacks": "1 Bowl of Chicken Soup",
+							"dinner": "1 large chicken breast | 1/4 garlic clove"
+						}
+					},
+					"workOuts": [
+						{
+							"day": "Day 1",
+							"name": "Walking",
+							"list": ["Walk for half an hour daily"]
+						},
+						{
+							"day": "Day 2",
+							"name": "Aqua Jogging.",
+							"list": [
+								"2 x Bodyweight Squat",
+								"2 x Squat Jump",
+								"2 x Lunge",
+								"2 x Standing calf raise",
+								"3 x Burpee"
+							]
+						},
+						{
+							"day": "Day 3",
+							"name": "Upper Body",
+							"list": [
+								"2 x Triceps Dip",
+								"6 x Pull ups",
+								"3 x Ab Circuits"
+							]
+						},
+						{
+							"day": "Day 4",
+							"name": "Lower Body",
+							"list": [
+								"2 x Bodyweight Squat",
+								"2 x Squat Jump",
+								"2 x Lunge"
+							]
+						}
+					]
+				},
+				"normalWeight": {
+					"type": "Normal Weight",
+					"foodPlan":{
+						"veg":  {
+							"breakfast" : "1 Vegetable upma | 2 almonds | 1 warm milk",
+							"morningSnacks": "1 cup seasonal fruits",
+							"lunch" : "3 rotis | 1 cup vegetable curry | 1 cup yogurt",
+							"eveningSnacks": "1 cup coconut water",
+							"dinner": "2 rotis | spinach gravy | 4 walnut"
+						},
+						"nonVeg": {
+							"breakfast" : "1 Vegetable upma | 1 Omelet | 1 warm milk",
+							"morningSnacks": "1 cup seasonal fruits",
+							"lunch" : "3 rotis | 1 cup chicken curry | 1 cup yogurt",
+							"eveningSnacks": "1 Bowl of chicken soup",
+							"dinner": "2 rotis | 1/2 tofu curry | 4 walnut"
+						}
+					},
+					"workOuts": [
+						{
+							"day": "Day 1",
+							"name": "Walking",
+							"list": ["Walk for half an hour daily"]
+						},
+						{
+							"day": "Day 2",
+							"name": "Aqua Jogging.",
+							"list": [
+								"2 x Bodyweight Squat",
+								"2 x Squat Jump",
+								"2 x Lunge",
+								"2 x Standing calf raise",
+								"3 x Burpee"
+							]
+						},
+						{
+							"day": "Day 3",
+							"name": "Upper Body",
+							"list": [
+								"2 x of Push ups",
+								"2 x Pike Push ups or Hindu Push ups",
+								"2 x Triceps Dip",
+								"6 x Pull ups",
+								"3 x Ab Circuits"
+							]
+						},
+						{
+							"day": "Day 4",
+							"name": "Lower Body",
+							"list": [
+								"2 x Bodyweight Squat",
+								"2 x Squat Jump",
+								"2 x Lunge",
+								"2 x Standing calf raise",
+								"3 x Burpee"
+							]
+						}
+					]
+				}
+			}
 		},
 		{
 			module: "myworkout",
