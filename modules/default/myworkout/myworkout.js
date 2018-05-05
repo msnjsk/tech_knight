@@ -3,9 +3,15 @@ Module.register("myworkout",{
 
 	// Default module config.
 	defaults: {
-		text: "My workout module"
+		text: "My workout module",
+		weight: "underWeight"
 	},
 	getScripts: function() {
+    	return [
+        	this.file("node_modules/jsonpointer/jsonpointer.js")
+		];
+	},
+	getStyles: function() {
 		return ["myworkout.css"];
 	},
 
@@ -14,6 +20,6 @@ Module.register("myworkout",{
 	},
 
 	getTemplateData: function () {
-		return this.config
+		return this.config[this.defaults.weight]
 	}
 });

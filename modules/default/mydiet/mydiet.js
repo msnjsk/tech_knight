@@ -7,10 +7,10 @@ Module.register("mydiet",{
 		weight: "underWeight"
 	},
 	getScripts: function() {
-        return [
-            this.file('node_modules/jsonpointer/jsonpointer.js')
-        ];
-    },
+    	return [
+        	this.file("node_modules/jsonpointer/jsonpointer.js")
+		];
+	},
 	getStyles: function() {
 		return ["mydiet.css"];
 	},

@@ -255,7 +255,93 @@ var config = {
 		{
 			module: "myworkout",
 			position: "top_right",
-			classes: 'default everyone'	
+			classes: 'default everyone',
+			config: {
+				"underWeight": {
+					"type": "Under Weight",
+					"workOuts":  {
+						"workoutDay": "Back and Biceps",
+						"exercises": [
+							{
+								"exercise": "BENTOVER ROW",
+								"set": "5 Sets | 8 Reps"
+							},
+							{
+								"exercise": "RACK PULL",
+								"set": "4 Sets | 10 Reps"
+							},
+							{
+								"exercise": "LAT PULLDOWN",
+								"set": "3 Sets | 15 Reps"
+							},
+							{
+								"exercise": "DUMBBELL ROW",
+								"set": "4 Sets | 12 Reps"
+							},
+							{
+								"exercise": "BARBELL CURL",
+								"set": "4 Sets | 10 Reps"
+							}
+						]
+					}
+				},
+				"overWeight": {
+					"type": "Over Weight",
+					"workOuts": {
+						"workoutDay": "Cardio and ABs",
+						"exercises": [
+							{
+								"exercise": "WALKING",
+								"set": "20 mins"
+							},
+							{
+								"exercise": "AQUA JOGGING",
+								"set": "20 mins"
+							},
+							{
+								"exercise": "FRONT SQUAT",
+								"set": "5 Sets | 12 Reps"
+							},
+							{
+								"exercise": "ROMANIAN DEADLIFT",
+								"set": "4 Sets | 10 Reps"
+							},
+							{
+								"exercise": "HANGING LEG RAISE",
+								"set":"4 Sets | 12 Reps"
+							}
+						]
+					}
+				},
+				"normalWeight": {
+					"type": "Normal Weight",
+					"workOuts": {
+						"workoutDay": "Chest and Triceps",
+						"exercises": [
+							{
+								"exercise": "BENCH PRESS",
+								"set": "5 Sets | 12 Reps"
+							},
+							{
+								"exercise": "INCLINE BENCH PRESS",
+								"set": "4 Sets | 10 Reps"
+							},
+							{
+								"exercise": "DIP",
+								"set": "3 Sets | 15 Reps"
+							},
+							{
+								"exercise": "TRICEPS PUSHDOWN",
+								"set": "4 Sets | 12 Reps"
+							},
+							{
+								"exercise": " EZ-CURL SKULL CRUSHER",
+								"set":"4 Sets | 10 Reps"
+							}
+						]
+					}
+				}
+			}
 		},
 /*{
 		        module: 'MMM-GoogleMapsTraffic',

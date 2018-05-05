@@ -6,13 +6,16 @@
 	<div class='title'>
 		<span class="icon-workout"></span>
 		My Workout
+		<p>Today's workout: {{ workOuts.workoutDay }}</p>
 	</div>
 	<ul class="workout-list">
+		{% for item in workOuts.exercises %}
 		<li>
 			<span class="icon icon-eat"></span>
-			<h3>Break Fast</h3>
-			<span class='food-items'>2 Idly | 1 Egg | 35gchanna<span>
+			<h3>{{item.exercise}}</h3>
+			<span class='food-items'>{{item.set}}<span>
 		</li>
+		{% endfor %}
 	</ul>
 
 </div>
