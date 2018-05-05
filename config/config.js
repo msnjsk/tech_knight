@@ -30,12 +30,11 @@ var config = {
 		{
 			module: "alert",
 		},
-{
+		{
 			module: "clock",
 			position: "top_left",
 			classes: 'default everyone',
 		},
-		
 		{
 		    module: 'MMM-Facial-Recognition',
 		    config: {
@@ -56,11 +55,18 @@ var config = {
 		    }
 		},
 		{
+			module: 'MMM-GoogleFit',
+			position: 'bottom_left',
+			config: {
+				// If desired
+			}
+		},
+		{
 			module: "compliments",
 			position: "top_center",
 			classes: 'senthilnathan'	
 		},
-{
+		{
 			module: "mydiet",
 			position: "bottom_right",
 			classes: 'default everyone',
@@ -263,45 +269,43 @@ var config = {
 		                width: "200px"
         		}
 		},*/
-{
-    module: 'MMM-MQTT',
-    position: 'middle_center',
-	classes: 'default everyone',
-    config: {
-        mqttUser: 'srirkjan',         // Leave out for no user
-        mqttPassword: 'xGmvZV_yY0m0', // Leave out for no password
-        mqttServer: 'm13.cloudmqtt.com:10110',
-        subscriptions: [
-            {
-                topic: 'sensor/1/temperature',
-                label: 'Temperature',
-                decimals: 1,
-                suffix: '°C'
-            },
-            {
-                topic: 'sensor/1/humidity',
-                label: 'Humidity',
-                decimals: 1,
-                suffix: '%'
-            },
-            {
-                topic: 'sensor/1/ultrasonic',
-                label: 'Height',
-                decimals: 0,
-				suffix: 'Cm'
-            },
-            {
-                topic: 'sensor/1/weight',
-                label: 'Weight',
-                decimals: 0,
-                suffix: 'Kg'
-            }
-            
-        ]
-    }
-}
+		{
+			module: 'MMM-MQTT',
+			position: 'middle_center',
+			classes: 'default everyone',
+			config: {
+				mqttUser: 'srirkjan',         // Leave out for no user
+				mqttPassword: 'xGmvZV_yY0m0', // Leave out for no password
+				mqttServer: 'm13.cloudmqtt.com:10110',
+				subscriptions: [
+					{
+						topic: 'sensor/1/temperature',
+						label: 'Temperature',
+						decimals: 1,
+						suffix: '°C'
+					},
+					{
+						topic: 'sensor/1/humidity',
+						label: 'Humidity',
+						decimals: 1,
+						suffix: '%'
+					},
+					{
+						topic: 'sensor/1/ultrasonic',
+						label: 'Height',
+						decimals: 0,
+						suffix: 'Cm'
+					},
+					{
+						topic: 'sensor/1/weight',
+						label: 'Weight',
+						decimals: 0,
+						suffix: 'Kg'
+					}
+				]
+			}
+		}
 	]
-
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
