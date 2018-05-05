@@ -7,6 +7,11 @@ Module.register("mydiet",{
 		weight: "underWeight"
 	},
 	getScripts: function() {
+        return [
+            this.file('node_modules/jsonpointer/jsonpointer.js')
+        ];
+    },
+	getStyles: function() {
 		return ["mydiet.css"];
 	},
 
@@ -22,6 +27,6 @@ Module.register("mydiet",{
 		return planData
 	},
 	notificationReceived: function(notification, payload, sender) {
-		console.log(notification +"----"+ payload);
+		//console.log(notification +"----"+ JSON.stringify(payload));
 	}
 });
